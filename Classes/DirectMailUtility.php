@@ -837,7 +837,7 @@ class DirectMailUtility
     public static function formatTable(array $tableLines, array $cellParams, $header, array $cellcmd = array(), $tableParams = 'class="table table-striped table-hover"')
     {
         reset($tableLines);
-        $cols = count(current($tableLines));
+        $cols = ((is_array(current($tableLines))) ? count(current($tableLines)) : 0);
 
         reset($tableLines);
         $lines = array();

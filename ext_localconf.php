@@ -112,3 +112,6 @@ $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['scheduler']['tasks']['DirectMailTeam\
     'description' => 'This task will get bounce mail from the configured mailbox',
     'additionalFields' => 'DirectMailTeam\\DirectMail\\Scheduler\\AnalyzeBounceMailAdditionalFields'
 ];
+
+// set content_doktypes if not allready defined
+$GLOBALS['TYPO3_CONF_VARS']['FE']['content_doktypes'] = ((isset($GLOBALS['TYPO3_CONF_VARS']['FE']['content_doktypes'])) ? $GLOBALS['TYPO3_CONF_VARS']['FE']['content_doktypes'] : '1,2,5,7');

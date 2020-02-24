@@ -33,6 +33,7 @@ class TsParserExt
      */
     public static function displayMessage()
     {
+        return '';
         $parameters = array(
             'tx_extensionmanager_tools_extensionmanagerextensionmanager[extensionKey]' => 'direct_mail',
             'tx_extensionmanager_tools_extensionmanagerextensionmanager[action]' => 'show',
